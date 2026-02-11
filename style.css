@@ -1423,6 +1423,7 @@ input, textarea {
         transition: left var(--transition-normal);
         box-shadow: var(--shadow-lg);
         padding: var(--spacing-md) 0;
+        z-index: 999;
     }
     
     .nav-menu.active {
@@ -1439,24 +1440,91 @@ input, textarea {
     
     .about-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
     
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 0 1rem;
     }
     
     .btn {
         width: 100%;
         max-width: 300px;
+        font-size: 0.9rem;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .project-card {
+        max-width: 100%;
+    }
+    
+    .project-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .view-project-btn {
+        width: 100%;
+    }
+    
+    .skills-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .profile-photo {
+        max-width: 300px;
+    }
+    
+    .scroll-down {
+        bottom: 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .scroll-down span {
+        letter-spacing: 1px;
+    }
+    
+    .chevron {
+        width: 20px;
+    }
+    
+    .info-card {
+        padding: 1rem;
+    }
+    
+    .social-links {
+        gap: 1rem;
     }
     
     body {
@@ -1466,28 +1534,128 @@ input, textarea {
     .custom-cursor {
         display: none;
     }
+    
+    /* Fix word spacing on mobile */
+    #typedText {
+        word-spacing: 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
     :root {
-        --spacing-lg: 3rem;
-        --spacing-xl: 4rem;
+        --spacing-lg: 2rem;
+        --spacing-xl: 3rem;
+    }
+    
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .nav-logo {
+        font-size: 1.25rem;
     }
     
     .section-title {
         font-size: 1.75rem;
     }
     
+    .hero {
+        min-height: 100vh;
+        padding: 5rem 0 3rem;
+    }
+    
     .hero-title {
-        font-size: 2rem;
+        font-size: clamp(1.75rem, 7vw, 2rem);
+        -webkit-text-stroke: 1.5px var(--color-primary);
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero-description {
+        font-size: 0.875rem;
+        line-height: 1.6;
+    }
+    
+    .hero-buttons {
+        gap: 0.75rem;
+    }
+    
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.7rem 1.25rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .about-text p {
+        font-size: 0.95rem;
     }
     
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-title {
+        font-size: 1.25rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+    }
+    
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.35rem 0.7rem;
     }
     
     .skills-content {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .category-title {
+        font-size: 1.1rem;
+    }
+    
+    .skill-name {
+        font-size: 0.9rem;
+    }
+    
+    .skill-percentage {
+        font-size: 0.85rem;
+    }
+    
+    .profile-photo {
+        max-width: 250px;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+    
+    .scroll-down {
+        bottom: 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .chevron {
+        width: 18px;
+        height: 6px;
     }
     
     .back-to-top {
@@ -1495,6 +1663,16 @@ input, textarea {
         height: 45px;
         bottom: 1rem;
         right: 1rem;
+    }
+    
+    .footer {
+        font-size: 0.8rem;
+        padding: 1.5rem 0;
+    }
+    
+    /* Adjust typed text spacing for small screens */
+    #typedText {
+        word-spacing: 0.6rem;
     }
 }
 
