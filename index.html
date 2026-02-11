@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Full Stack Developer">
+    <title>Faisal Ahmed | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-mesh"></div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo/Brand - Replace with Faisal Ahmed/logo -->
+            <a href="#home" class="nav-logo">Faisal Ahmed</a>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Burger Menu Icon -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-subtitle">Hello, I'm</h2>
+            <!-- Typing effect will be applied here -->
+            <h1 class="hero-title">
+                <span id="typedText"></span>
+                <span class="cursor">|</span>
+            </h1>
+            <p class="hero-description">Computer Science Engineer 🎓 | Securing Digital Frontiers 🛡️ | Quality-Driven Development ✨</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="Faisal Ahmed_CV.pdf" target="_blank" class="btn btn-secondary">Resume</a>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down" data-next="about">
+            <span>Scroll Down</span>
+            <div class="arrow-container">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-scroll-reveal>About Me</h2>
+            <div class="about-content" data-scroll-reveal>
+                <div class="about-text">
+                    <p class="about-intro">
+                        Graduated with a B.Sc in Computer Science and Engineering from BRAC University (2021-2026) 
+                        with a CGPA of 3.59, passionate about building secure, resilient systems that make a difference. 
+                        My focus areas include Cybersecurity and Software Quality Assurance, with proficiency in 
+                        full-stack development.
+                    </p>
+                    <p>
+                        My journey in tech encompasses full-stack development, machine learning, and security testing. 
+                        I've built comprehensive web applications using Django, MERN Stack, and PHP, ranging from fitness platforms 
+                        to emergency medical aid systems. My recent work includes developing a telecom churn predictor and conducting penetration testing to identify critical vulnerabilities.
+                    </p>
+                    <p>
+                        Beyond coding, I'm a former member of BRAC University Research and Development (BUReD) club, solved 
+                        CTF challenges like picoCTF to enhance my cybersecurity skills, and explored video crafting to strengthen 
+                        creativity and storytelling abilities.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="profile-photo-wrap">
+                        <img src="profile-photo.jpg" alt="Faisal Ahmed" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down" data-next="projects">
+            <span>Scroll Down</span>
+            <div class="arrow-container">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-scroll-reveal>Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project Card 1 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">Fitness Platform</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21/Fitness-Nutrition-Platform" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Fitness & Nutrition Platform</h3>
+                        <p class="project-description">
+                            Multi-role web application featuring personalized workout & nutrition plans, subscription management 
+                            with Stripe & bKash payment interface integration, BMI tracking, video tutorials, discussion forum, and AI chatbot assistance.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Stripe API</span>
+                            <span class="tag">AI Chatbot</span>
+                        </div>
+                        <a href="https://github.com/FaisalAhmed21/CSE471-Fitness-and-Nutrition-platform" target="_blank" class="view-project-btn">
+                            <span>View Project →</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">Lifeline Emergency</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21/Lifeline-Emergency-Medical-Aid" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Lifeline Emergency & Medical Aid</h3>
+                        <p class="project-description">
+                            Multi-role emergency response web application with real-time helper tracking, AI-powered medical 
+                            chatbot for first aid guidance, hospital locator with directions, and premium feature payment interface integration.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MERN Stack</span>
+                            <span class="tag">Real-time Tracking</span>
+                            <span class="tag">AI Chatbot</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://lifeline-medical-aid-fbc2e.web.app/" target="_blank" class="view-project-btn">
+                                <span>View Website →</span>
+                            </a>
+                            <a href="https://github.com/FaisalAhmed21/Lifeline-Medical-Aid" target="_blank" class="view-project-btn">
+                                <span>View Project →</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">Food Platform</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21/Food-Order-Donation-Platform" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Food Ordering & Donation Platform</h3>
+                        <p class="project-description">
+                            Dual-purpose platform enabling restaurant food ordering and surplus food donation to reduce waste. 
+                            Features real-time map tracking, Stripe & bKash payments interface, automated volunteer assignment, and AI voice chatbot.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MERN Stack</span>
+                            <span class="tag">Real-time Maps</span>
+                            <span class="tag">Voice AI</span>
+                            <span class="tag">Payment APIs</span>
+                        </div>
+                        <a href="https://github.com/FaisalAhmed21/Food-Order-Share-Platform" target="_blank" class="view-project-btn">
+                            <span>View Project →</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">ML Analytics</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21/Telecom-Churn-Analytics" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Telecom Churn Analytics Platform</h3>
+                        <p class="project-description">
+                            High-precision customer churn prediction system achieving ~98% F1-score using cost-sensitive Random Forest models, 
+                            advanced feature engineering, and interactive real-time Streamlit dashboard for business insights.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Random Forest</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <a href="https://github.com/FaisalAhmed21/Telecom-Churn-Analytics-Platform" target="_blank" class="view-project-btn">
+                            <span>View Project →</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 5 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">To-Let System</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21/To-Let-Management-System" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">To-Let Management System</h3>
+                        <p class="project-description">
+                            Comprehensive rental property management platform with secure user authentication, detailed property listings, 
+                            advanced search filters, booking request system, and admin dashboard for property management.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Authentication</span>
+                            <span class="tag">Admin Panel</span>
+                        </div>
+                        <a href="https://github.com/FaisalAhmed21/CSE370-Project_To-Let_Management_System" target="_blank" class="view-project-btn">
+                            <span>View Project →</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 6 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">Pothole Detection</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21/Pothole-Detection-System-With-Machine-Learning-and-Computer-Vision" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Pothole Detection System</h3>
+                        <p class="project-description">
+                            Real-time road safety solution using YOLOv8 segmentation for computer vision-based pothole detection, tracking, 
+                            and risk classification with automated severity reporting and analytics dashboard.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">YOLOv8</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Real-time Detection</span>
+                        </div>
+                        <a href="https://github.com/FaisalAhmed21/Pothole-Detection-System-With-Machine-Learning-and-Computer-Vision" target="_blank" class="view-project-btn">
+                            <span>View Project →</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 7 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">Car Parking</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21/Automated-Car-Parking-System" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Automated Car Parking System</h3>
+                        <p class="project-description">
+                            IoT-based parking management system using Arduino and RFID technology for contactless vehicle entry/exit, 
+                            automated toll collection, and real-time parking slot availability monitoring.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">RFID</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Embedded Systems</span>
+                        </div>
+                        <a href="https://github.com/FaisalAhmed21/CSE461_Project_-Automated_Car_Parking_System" target="_blank" class="view-project-btn">
+                            <span>View Project →</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project Card 8 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">Country Guide</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21/Country-Guide" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Country Guide</h3>
+                        <p class="project-description">
+                            Interactive web application for exploring comprehensive global country information including demographics, geography, 
+                            economy, and cultural insights through an intuitive and responsive interface.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">Web App</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://faisalahmed21.github.io/Country-Guide/" target="_blank" class="view-project-btn">
+                                <span>View Website →</span>
+                            </a>
+                            <a href="https://github.com/FaisalAhmed21/Country-Guide" target="_blank" class="view-project-btn">
+                                <span>View Project →</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 9 -->
+                <article class="project-card" data-scroll-reveal>
+                    <div class="project-image">
+                        <div class="image-placeholder">Tile Block Puzzle</div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/FaisalAhmed21" target="_blank" class="project-link" aria-label="View Project">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Tile Block Puzzle Game</h3>
+                        <p class="project-description">
+                            Classic tile-based puzzle game built with Python and Pygame featuring intuitive controls, time-based challenge, 
+                            score tracking system, and smooth animations for an engaging gaming experience.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pygame</span>
+                            <span class="tag">Game Dev</span>
+                            <span class="tag">2D Graphics</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://faisalahmed21.itch.io/tile-block-puzzle-game" target="_blank" class="view-project-btn">
+                                <span>View Game →</span>
+                            </a>
+                            <a href="https://github.com/FaisalAhmed21/Tile-Block-Puzzle-Game" target="_blank" class="view-project-btn">
+                                <span>View Project →</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down" data-next="skills">
+            <span>Scroll Down</span>
+            <div class="arrow-container">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-scroll-reveal>Skills & Proficiency</h2>
+            
+            <div class="skills-content">
+                <!-- Frontend Skills -->
+                <div class="skill-category" data-scroll-reveal>
+                    <h3 class="category-title">Frontend Development</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML & CSS</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Figma</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category" data-scroll-reveal>
+                    <h3 class="category-title">Backend Development</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Django</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-percentage">78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="78"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL & Database</span>
+                            <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="82"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialized Skills -->
+                <div class="skill-category" data-scroll-reveal>
+                    <h3 class="category-title">Specialized Skills</h3>
+                    
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Machine Learning</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Jira & Project Management</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Software QA & TDD/BDD</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down" data-next="contact">
+            <span>Scroll Down</span>
+            <div class="arrow-container">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-scroll-reveal>Get In Touch</h2>
+            <p class="contact-subtitle" data-scroll-reveal>
+                Have a project in mind? Let's work together to bring your ideas to life.
+            </p>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/faisalrajshahi2003@gmail.com" method="POST" data-scroll-reveal>
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="John Doe"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="john@example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            placeholder="Project Inquiry"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            placeholder="Tell me about your project..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        Send Message
+                    </button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info" data-scroll-reveal>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h4>Location</h4>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p>faisalrajshahi2003@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h4>Phone</h4>
+                            <p>+880 1407 963 892</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/FaisalAhmed21" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/faisal-ahmed-6b30a8264/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Faisal Ahmed. All rights reserved. | Crafted with passion and code.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
